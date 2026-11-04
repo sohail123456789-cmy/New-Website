@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — DigitalDot</title>
+<meta name="description" content="DigitalDot's terms of service for use of our website.">
+<link rel="canonical" href="https://www.digitaldot.com/terms.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="wordmark">Digital<span class="dot">.</span>Dot</a>
+    <a href="index.html" class="btn btn-ghost btn-sm">Back to Home</a>
+  </div>
+</header>
+<main class="container legal-page">
+  <h1>Terms of Service</h1>
+  <p>Last updated: <span id="updatedDate"></span></p>
+
+  <h2>Use of This Site</h2>
+  <p>This website is provided for informational purposes about DigitalDot's services. By using this site, you agree to use it only for lawful purposes.</p>
+
+  <h2>No Guaranteed Results</h2>
+  <p>Any descriptions of our approach, process, or services on this site are illustrative and do not constitute a guarantee of specific marketing results. Actual engagements are governed by a separate services agreement.</p>
+
+  <h2>Intellectual Property</h2>
+  <p>All content on this site, including text, graphics, and design, is the property of DigitalDot unless otherwise noted, and may not be reproduced without permission.</p>
+
+  <h2>Changes to These Terms</h2>
+  <p>We may update these terms from time to time. Continued use of the site after changes constitutes acceptance of the updated terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these terms can be directed to us via the contact form on our homepage.</p>
+</main>
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <p>&copy; <span id="currentYear"></span> DigitalDot. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+  document.getElementById('updatedDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+</body>
+</html>

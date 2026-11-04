@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DigitalDot</title>
+<meta name="description" content="DigitalDot's privacy policy explaining how we collect and use information submitted through our website.">
+<link rel="canonical" href="https://www.digitaldot.com/privacy.html">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="wordmark">Digital<span class="dot">.</span>Dot</a>
+    <a href="index.html" class="btn btn-ghost btn-sm">Back to Home</a>
+  </div>
+</header>
+<main class="container legal-page">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: <span id="updatedDate"></span></p>
+
+  <h2>What We Collect</h2>
+  <p>When you submit our contact form or growth assessment, we collect the information you provide, such as your name, business email, company name, service interest, and project description.</p>
+
+  <h2>How We Use It</h2>
+  <p>We use this information solely to respond to your inquiry and, if you proceed, to discuss and deliver our services. We do not sell your information to third parties.</p>
+
+  <h2>Cookies and Analytics</h2>
+  <p>This site may use essential cookies required for basic functionality. If analytics tools are added in the future, this policy will be updated to reflect that.</p>
+
+  <h2>Data Retention</h2>
+  <p>We retain inquiry information only as long as needed to respond to your request or to maintain a business relationship, and in accordance with applicable law.</p>
+
+  <h2>Your Rights</h2>
+  <p>You may request access to, correction of, or deletion of information you have submitted to us by contacting us directly.</p>
+
+  <h2>Contact</h2>
+  <p>For privacy questions, please reach out via the contact form on our homepage.</p>
+</main>
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <p>&copy; <span id="currentYear"></span> DigitalDot. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+  document.getElementById('updatedDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+</body>
+</html>
