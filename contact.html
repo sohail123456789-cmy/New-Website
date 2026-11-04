@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote — DigitalDot Website Development</title>
+<meta name="description" content="Tell DigitalDot about your website development, redesign, ecommerce, or custom application project and request a quote.">
+<link rel="canonical" href="https://www.digitaldot.com/contact.html">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="visually-hidden">Skip to main content</a>
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a href="index.html" class="wordmark">Digital<span class="dot">.</span>Dot</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="services/index.html">Services</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-accent btn-sm">Request a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="services/index.html">Services</a>
+  <a href="portfolio.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-accent">Request a Quote</a>
+</div>
+
+<main id="main">
+  <section class="container section-pad contact-grid" id="contact">
+    <div class="contact-info reveal in-view">
+      <p class="eyebrow">Get In Touch</p>
+      <h2>Request a quote.</h2>
+      <p>Tell us a bit about your project and we'll follow up to scope it and schedule a discovery call.</p>
+    </div>
+
+    <form class="reveal in-view" id="contactForm" novalidate action="https://formspree.io/f/sohail232@gmail.com" method="POST">
+      <div class="form-group" id="group-name">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+        <p class="field-error">Please enter your full name.</p>
+      </div>
+      <div class="form-group" id="group-email">
+        <label for="businessEmail">Business Email</label>
+        <input type="email" id="businessEmail" name="businessEmail" autocomplete="email" required>
+        <p class="field-error">Please enter a valid email address.</p>
+      </div>
+      <div class="form-group" id="group-company">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" name="companyName" autocomplete="organization" required>
+        <p class="field-error">Please enter your company name.</p>
+      </div>
+      <div class="form-group" id="group-service">
+        <label for="serviceInterest">Service of Interest</label>
+        <select id="serviceInterest" name="serviceInterest" required>
+          <option value="">Select a service</option>
+          <option value="website-development">Business Website Development</option>
+          <option value="website-design-redesign">Website Design &amp; Redesign</option>
+          <option value="ecommerce-development">Ecommerce Development</option>
+          <option value="custom-web-applications">Custom Web Applications</option>
+          <option value="wordpress-development">WordPress Development</option>
+          <option value="website-maintenance">Website Maintenance</option>
+          <option value="not-sure">Not sure yet</option>
+        </select>
+        <p class="field-error">Please select a service.</p>
+      </div>
+      <div class="form-group" id="group-message">
+        <label for="projectDesc">Project Description</label>
+        <textarea id="projectDesc" name="projectDesc" required placeholder="Tell us about your business, timeline, and what you're looking to build."></textarea>
+        <p class="field-error">Please tell us a bit about your project.</p>
+      </div>
+
+      <!-- honeypot spam field -->
+      <div style="position:absolute; left:-9999px;" aria-hidden="true">
+        <label for="companyWebsite">Company Website</label>
+        <input type="text" id="companyWebsite" name="companyWebsite" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="btn btn-accent" id="submitBtn" style="width:100%; justify-content:center;">
+        <span class="btn-text">Send Message</span>
+      </button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="wordmark">Digital<span class="dot">.</span>Dot</a>
+        <p>A website development company helping US businesses build and maintain websites that work.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="services/index.html">Services</a></li>
+          <li><a href="portfolio.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/website-development.html">Business Websites</a></li>
+          <li><a href="services/website-design-redesign.html">Design &amp; Redesign</a></li>
+          <li><a href="services/ecommerce-development.html">Ecommerce Development</a></li>
+          <li><a href="services/custom-web-applications.html">Custom Web Applications</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="index.html#assessment">Project Planner</a></li>
+          <li><a href="contact.html">Request a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> DigitalDot. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
