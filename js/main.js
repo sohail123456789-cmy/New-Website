@@ -176,7 +176,12 @@
       recs.slice(0, 3).forEach(function (rec) {
         var div = document.createElement('div');
         div.className = 'result-rec';
-        div.innerHTML = '<strong>' + rec.title + '</strong><span>' + rec.desc + '</span>';
+        var strong = document.createElement('strong');
+        strong.textContent = rec.title;
+        var span = document.createElement('span');
+        span.textContent = rec.desc;
+        div.appendChild(strong);
+        div.appendChild(span);
         resultRecs.appendChild(div);
       });
     }
