@@ -844,6 +844,18 @@ h1, h2, h3, h4 {
 .service-index-card h2 { font-size: 1.3rem; margin-bottom: var(--space-1); }
 .service-index-card p { color: var(--color-text-muted); margin-bottom: var(--space-2); }
 
+/* Blog card thumbnail */
+.blog-card-thumb {
+  aspect-ratio: 16/9;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+  background: linear-gradient(135deg, var(--color-bg), var(--color-border));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-card-thumb svg { width: 56px; height: 56px; color: var(--color-accent); }
+
 /* Simple pages (privacy/terms) */
 .legal-page { padding: var(--space-7) 0; max-width: 720px; margin: 0 auto; }
 .legal-page h1 { font-size: 2.2rem; margin-bottom: var(--space-3); }
